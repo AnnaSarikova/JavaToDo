@@ -16,8 +16,8 @@ public class Main extends Application {
     public void start(Stage primaryStage) throws Exception{
 //        Parent root = FXMLLoader.load(getClass().getResource("C:\\Users\\ASUS\\Desktop\\JavaToDo\\src\\sample\\views\\Registration.fxml"));
         FXMLLoader loader = new FXMLLoader();
-        loader.setLocation(Main.class.getResource("C:\\Users\\ASUS\\Desktop\\JavaToDo\\src\\sample\\views\\Registration.fxml"));
-        AnchorPane testScene = loader.load();
+        loader.setLocation(Main.class.getResource("/Registration.fxml"));
+        BorderPane testScene = loader.load();
 
         Scene scene = new Scene(testScene);
         primaryStage.setScene(scene);
