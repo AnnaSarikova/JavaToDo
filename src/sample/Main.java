@@ -2,30 +2,35 @@ package sample;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
 
+import java.io.IOException;
+
 public class Main extends Application {
     private Stage primaryStage;
-//    private BorderPane testScene;
 
     @Override
     public void start(Stage primaryStage) throws Exception{
-//        Parent root = FXMLLoader.load(getClass().getResource("C:\\Users\\ASUS\\Desktop\\JavaToDo\\src\\sample\\views\\Registration.fxml"));
-        FXMLLoader loader = new FXMLLoader();
-        loader.setLocation(Main.class.getResource("/Registration.fxml"));
-        BorderPane testScene = loader.load();
+        this.primaryStage = primaryStage;
 
-        Scene scene = new Scene(testScene);
-        primaryStage.setScene(scene);
         primaryStage.setTitle("TO DO");
+
+        showHomeScreenOverview();
         primaryStage.show();
 
     }
+    public void showHomeScreenOverview() throws IOException {
+        FXMLLoader loader = new FXMLLoader();
+        loader.setLocation(Main.class.getResource("/views/HomeScreen.fxml"));
+        BorderPane homeScreenOverview = (BorderPane) loader.load();
+        Scene scene = new Scene(homeScreenOverview);
+        primaryStage.setScene(scene);
 
+
+
+    }
 
     public static void main(String[] args) {
         launch(args);
