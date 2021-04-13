@@ -45,7 +45,7 @@
                   <PasswordField prefHeight="25.0" prefWidth="130.0" promptText="Введите пароль" style="-fx-border-color: #7400b8;" GridPane.columnIndex="1" GridPane.rowIndex="5" />
                </children>
             </GridPane>
-            <Button fx:id="RegistrationButton" layoutX="218.0" layoutY="277.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="142.0" style="-fx-border-color: #7400b8; -fx-border-radius: 3;" text="Зарегистрироваться">
+            <Button fx:id="RegistrationButton" layoutX="218.0" layoutY="277.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="142.0" style="-fx-border-color: #7400b8; -fx-border-radius: 3;" text="Зарегистрироваться" AnchorPane.bottomAnchor="27.666666666666686" AnchorPane.rightAnchor="240.0">
                <effect>
                   <DropShadow />
                </effect>
@@ -56,12 +56,12 @@
    <top>
       <AnchorPane prefHeight="61.0" prefWidth="600.0" style="-fx-background-color: #7400b8;" BorderPane.alignment="CENTER">
          <children>
-            <Label layoutX="234.0" layoutY="14.0" text="Регистрация" textFill="WHITE">
+            <Label layoutX="234.0" layoutY="14.0" text="Регистрация" textFill="WHITE" AnchorPane.bottomAnchor="13.333333333333336" AnchorPane.topAnchor="14.0">
                <font>
                   <Font size="23.0" />
                </font>
             </Label>
-            <Button fx:id="EnterButton" layoutX="444.0" layoutY="14.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="142.0" style="-fx-border-color: #7400b8; -fx-border-radius: 3;" text="Войти">
+            <Button fx:id="EnterButton" layoutX="444.0" layoutY="14.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="142.0" style="-fx-border-color: #7400b8; -fx-border-radius: 3;" text="Войти" AnchorPane.bottomAnchor="13.333333333333336" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="14.0">
                <effect>
                   <DropShadow />
                </effect>
