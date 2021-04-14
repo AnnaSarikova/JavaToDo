@@ -12,7 +12,6 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.text.Font?>
 
-<?import javafx.scene.layout.VBox?>
 <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controllers.RegistrationController">
    <center>
       <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #64dfdf;" BorderPane.alignment="CENTER">
@@ -62,7 +61,7 @@
                   <Font size="23.0" />
                </font>
             </Label>
-            <Button fx:id="EnterButton" layoutX="444.0" layoutY="14.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="142.0" style="-fx-border-color: #7400b8; -fx-border-radius: 3;" text="Войти" AnchorPane.bottomAnchor="13.333333333333336" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="14.0">
+            <Button fx:id="EnterButton" layoutX="444.0" layoutY="14.0" mnemonicParsing="false" onAction="#switchToEnter" prefHeight="34.0" prefWidth="142.0" style="-fx-border-color: #7400b8; -fx-border-radius: 3;" text="Войти" AnchorPane.bottomAnchor="13.333333333333336" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="14.0">
                <effect>
                   <DropShadow />
                </effect>
