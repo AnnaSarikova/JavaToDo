@@ -19,6 +19,7 @@ public class Main extends Application {
         primaryStage.setTitle("TO DO");
 
         showRegistrationOverview();
+
         primaryStage.show();
 
     }
@@ -42,12 +43,8 @@ public class Main extends Application {
 
     public void showAuthorizationOverview() throws IOException {
         Parent root = FXMLLoader.load(getClass().getResource("/views/Authorization.fxml"));
-//        stage = (Stage) ((Node)event.getSource()).getScene().getWindow();
-        Stage stage = new Stage();
-        stage.setScene(new Scene(root));
-//        scene = new Scene(root);
-//        stage.setScene(scene);
-        stage.show();
+        Scene authorizationScene = new Scene(root);
+        primaryStage.setScene(authorizationScene);
     }
 
 

@@ -40,8 +40,11 @@ public class RegistrationController {
 
     @FXML
     public void switchToEnter(ActionEvent event) throws IOException {
-
-
+        Parent enter_page = FXMLLoader.load(getClass().getResource("/views/Authorization.fxml"));
+        Scene enter_page_scene = new Scene(enter_page);
+        Stage app_stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        app_stage.setScene(enter_page_scene);
+        app_stage.show();
 
     }
 
