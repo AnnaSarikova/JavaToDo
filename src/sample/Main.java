@@ -40,7 +40,7 @@ public class Main extends Application {
 
     }
 
-    public void showLoginOverview() throws IOException {
+    public void showAuthorizationOverview() throws IOException {
         Parent root = FXMLLoader.load(getClass().getResource("/views/Authorization.fxml"));
 //        stage = (Stage) ((Node)event.getSource()).getScene().getWindow();
         Stage stage = new Stage();

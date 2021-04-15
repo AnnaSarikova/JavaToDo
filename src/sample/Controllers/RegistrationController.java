@@ -41,6 +41,8 @@ public class RegistrationController {
     @FXML
     public void switchToEnter(ActionEvent event) throws IOException {
 
+
+
     }
 
 
